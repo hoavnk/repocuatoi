@@ -1,0 +1,270 @@
+2024-06-28T06:59:31+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:00:23+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:00:39+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:01:04+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:02:01+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:03:22+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:03:35+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:03:56+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:04:48+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:04:59+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:05:00+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:05:39+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:06:40+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:23:08+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:27:07+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 66
+
+2024-06-28T07:27:10+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:27:10+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 66
+
+2024-06-28T07:27:14+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:27:14+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 66
+
+2024-06-28T07:27:15+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 66
+
+2024-06-28T07:27:26+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 66
+
+2024-06-28T07:28:18+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:28:26+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T07:29:50+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T08:12:04+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T08:15:48+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T08:34:50+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T08:41:14+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T08:45:01+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 65
+
+2024-06-28T08:45:04+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 65
+
+2024-06-28T08:45:26+00:00 CRITICAL syntax error, unexpected 'the_content' (T_STRING) in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 65
+
+2024-06-28T08:45:44+00:00 CRITICAL syntax error, unexpected 'the_content' (T_STRING) in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 65
+
+2024-06-28T08:45:45+00:00 CRITICAL syntax error, unexpected 'the_content' (T_STRING) in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/page.php on line 65
+
+2024-06-28T08:48:45+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/functions.php on line 420
+
+2024-06-28T08:49:06+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/functions.php on line 420
+
+2024-06-28T08:54:12+00:00 CRITICAL Uncaught Error: Call to undefined function porto_vc_commons() in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php:94
+Stack trace:
+#0 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(2325): Porto_Elementor_Circular_Bar_Widget->_register_controls()
+#1 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#2 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/base/widget-base.php(177): Elementor\Controls_Stack->get_stack()
+#3 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/includes/managers/widgets.php(351): Elementor\Widget_Base->get_stack()
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config()
+#5 /www/wwwroot/castorhill.xyz/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func()
+#6 /www/wwwroot/castorhill.xyz/wp-includes/class-wp-hook.php(308):  in /www/wwwroot/castorhill.xyz/wp-content/plugins/porto-functionality/elementor/widgets/circular_bar.php on line 94
+
+2024-06-28T11:04:59+00:00 CRITICAL syntax error, unexpected '--' (T_DEC) in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/widget/widgets/class-orchid-store-featured-product-categories-widget.php on line 66
+
+2024-06-28T11:05:17+00:00 CRITICAL syntax error, unexpected '--' (T_DEC) in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/widget/widgets/class-orchid-store-featured-product-categories-widget.php on line 66
+
+2024-06-28T11:05:18+00:00 CRITICAL syntax error, unexpected '--' (T_DEC) in /www/wwwroot/castorhill.xyz/wp-content/themes/orchid-store/widget/widgets/class-orchid-store-featured-product-categories-widget.php on line 66
+

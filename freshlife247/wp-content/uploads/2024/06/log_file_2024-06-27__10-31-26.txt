@@ -1,0 +1,165 @@
+
+---Downloaded files---
+The import files for: Default Demo were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = http://castorhill.xyz
+Data file = /www/wwwroot/castorhill.xyz/wp-content/uploads/2024/06/demo-content-import-file_2024-06-27__10-31-26.xml
+Widget file = /www/wwwroot/castorhill.xyz/wp-content/uploads/2024/06/demo-widgets-import-file_2024-06-27__10-31-26.json
+Customizer file = /www/wwwroot/castorhill.xyz/wp-content/uploads/2024/06/demo-customizer-import-file_2024-06-27__10-31-26.dat
+
+------
+Completed AJAX call number: 1
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+------
+Completed AJAX call number: 2
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+------
+Completed AJAX call number: 3
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+------
+Completed AJAX call number: 4
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+------
+Completed AJAX call number: 5
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+------
+Completed AJAX call number: 6
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+------
+Completed AJAX call number: 7
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+------
+Completed AJAX call number: 8
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+------
+Completed AJAX call number: 9
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+------
+Completed AJAX call number: 10
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+
+
+---Importing content---
+[WARNING] Failed to import pa_size L
+[WARNING] Failed to import pa_size M
+[WARNING] Failed to import pa_size S
+[WARNING] Could not find the post parent for "" (post #337)
+[WARNING] Could not find the post parent for "" (post #338)
+[WARNING] Could not find the post parent for "" (post #349)
+[WARNING] Could not find the post parent for "" (post #350)
+[WARNING] Could not find the post parent for "" (post #351)
+[WARNING] Could not find the post parent for "" (post #352)
+[WARNING] Could not find the post parent for "" (post #355)
+[WARNING] Could not find the post parent for "" (post #356)
+[WARNING] Could not find the post parent for "" (post #357)
+[WARNING] Could not find the post parent for "" (post #358)
+[WARNING] Could not find the post parent for "" (post #361)
+[WARNING] Could not find the post parent for "" (post #457)
+[WARNING] Could not find the post parent for "" (post #458)
+[WARNING] Could not find the post parent for "" (post #459)
+[WARNING] Could not find the author for comment #3
+[WARNING] Could not find the author for comment #4
+[WARNING] Could not find the author for comment #8
+[WARNING] Could not find the author for comment #9
+
+Max execution time after content import = 300
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---Importing widgets---
+sidebar-3 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Custom HTML - About - Imported to Inactive
+
+sidebar-4 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Products list - On sale - Imported to Inactive
+
+sidebar-5 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Products by Rating list - Top rated products - Imported to Inactive
+
+sidebar-6 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Products list - New Arrivals - Imported to Inactive
+
+Sidebar : 
+
+Search - Search - Imported
+Product Categories - Product categories - Imported
+
+Frontpage Widget Area : 
+
+OS: Banner - No Title - Imported
+OS: Featured Product Categories - Featured Categories - Imported
+OS: Products - Female Clothing - Imported
+OS: Services - No Title - Imported
+OS: Products By Category Filter - Product Category Filter - Imported
+OS: Offer Advertisement - No Title - Imported
+OS: Products - New Furnitures - Imported
+OS: Recent Blog Posts - From the blog - Imported
+
+Footer 1 : 
+
+OS: About Widget - About - Imported
+
+Footer 2 : 
+
+Products by Rating list - Top rated products - Imported
+
+Footer 3 : 
+
+Products list - Product on sale - Imported
+
+Woocommerce Sidebar : 
+
+Product Search - Search - Imported
+Filter Products by Price - Filter by price - Imported
+Product Categories - Product categories - Imported
+Recent Product Reviews - Recent reviews - Imported
+Products list - On sale - Imported
+
+
+
+---et-after-demo-content-import---
+

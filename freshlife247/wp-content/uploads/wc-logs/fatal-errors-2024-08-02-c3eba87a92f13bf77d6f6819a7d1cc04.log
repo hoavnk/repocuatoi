@@ -1,0 +1,10 @@
+2024-08-02T02:33:52+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /www/wwwroot/freshlife247.com/wp-content/plugins/elementor/includes/template-library/manager.php:468
+Stack trace:
+#0 /www/wwwroot/freshlife247.com/wp-content/plugins/elementor/includes/template-library/manager.php(630): Elementor\TemplateLibrary\Manager->import_template()
+#1 /www/wwwroot/freshlife247.com/wp-includes/class-wp-hook.php(324): Elementor\TemplateLibrary\Manager->handle_direct_actions()
+#2 /www/wwwroot/freshlife247.com/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /www/wwwroot/freshlife247.com/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /www/wwwroot/freshlife247.com/wp-admin/admin-ajax.php(192): do_action()
+#5 {main}
+  thrown in /www/wwwroot/freshlife247.com/wp-content/plugins/elementor/includes/template-library/manager.php on line 468
+

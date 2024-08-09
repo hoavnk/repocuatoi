@@ -1,0 +1,9 @@
+2022-12-08T09:09:59+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /Users/onion9x/Documents/Source Code/kyc-store/wp-includes/class-wp-image-editor.php on line 576
+
+2022-12-08T09:23:50+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore::insert_lookup_table_data_for_variation() must be an instance of WC_Product_Variation, instance of WC_Product_Simple given, called in /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php on line 365 and defined in /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php:402
+Stack trace:
+#0 /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(365): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->insert_lookup_table_data_for_variation(Object(WC_Product_Simple), 'pa_color', 2307, Array, Array)
+#1 /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(285): Auto in /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php on line 402
+
+2022-12-08T19:52:13+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /Users/onion9x/Documents/Source Code/kyc-store/wp-includes/class-wpdb.php on line 2187
+

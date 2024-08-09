@@ -1,0 +1,12 @@
+2022-12-09T11:09:18+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Pelago\Emogrifier\HtmlProcessor\AbstractHtmlProcessor::removeSelfClosingTagsClosingTags() must be of the type string, bool given, called in /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/vendor/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php on line 174 and defined in /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/vendor/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php:197
+Stack trace:
+#0 /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/vendor/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php(174): Pelago\Emogrifier\HtmlProcessor\AbstractHtmlProcessor->removeSelfClosingTagsClosingTags(false)
+#1 /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/includes/emails/class-wc-email.php(608): Pelago\Emogrifier\HtmlProcessor\AbstractHtmlProcessor->render()
+#2 /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins in /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/vendor/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php on line 197
+
+2022-12-09T11:09:54+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Pelago\Emogrifier\HtmlProcessor\AbstractHtmlProcessor::removeSelfClosingTagsClosingTags() must be of the type string, bool given, called in /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/vendor/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php on line 174 and defined in /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/vendor/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php:197
+Stack trace:
+#0 /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/vendor/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php(174): Pelago\Emogrifier\HtmlProcessor\AbstractHtmlProcessor->removeSelfClosingTagsClosingTags(false)
+#1 /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/includes/emails/class-wc-email.php(608): Pelago\Emogrifier\HtmlProcessor\AbstractHtmlProcessor->render()
+#2 /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins in /Users/onion9x/Documents/Source Code/kyc-store/wp-content/plugins/woocommerce/vendor/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php on line 197
+
