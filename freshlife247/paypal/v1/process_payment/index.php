@@ -65,6 +65,15 @@ class PatchOrder
             }
             $client = new PayPalHttpClient($environment);
             $request = new OrdersPatchRequest($orderId);
+
+            // If name product is over 127 characters, just get 127 characters
+            if (strlen($data->items->name) > 127) {
+                $data->items->name = substr($data->items->name, 0, 127);
+            }
+
+            // Add prefix platform into invoice_id
+            $data->invoice_id = "TPO_" . $data->invoice_id;
+
             $request->body = PatchOrder::buildRequestBody($data);
             $response = $client->execute($request);
 
