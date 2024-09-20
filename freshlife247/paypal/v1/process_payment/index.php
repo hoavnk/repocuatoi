@@ -16,31 +16,36 @@ class PatchOrder
 {
     private static function buildRequestBody($data)
     {
-        $items = [
-            [
-                'name' => $data->items->name,
+        $items = [];
+        foreach($data->items as $item) {
+            $items[] = [
+                'name' => $item->name,
                 'unit_amount' => [
                     'currency_code' => $data->currency,
-                    'value' => $data->total
+                    'value' => $item->total
                 ],
-                'quantity' => $data->items->quantity
-            ]
-        ];
+                'quantity' => $item->quantity
+            ];
+        }
 
         $results = [
             [
                 'op' => 'replace',
-                'path' => "/purchase_units/@reference_id=='default'",
+                'path' => "/purchase_units/@reference_id=='default'/amount",
                 'value' => [
-                    'amount' => [
-                        'currency_code' => $data->currency,
-                        'value' => $data->total,
-                        'breakdown' => [
-                            'item_total' => ['currency_code' => $data->currency, 'value' => $data->total]
-                        ]
-                    ],
-                    'items' => $items
+                    'currency_code' => $data->currency,
+                    'value' => $data->total,
+                    'breakdown' => [
+                        'item_total' => ['currency_code' => $data->currency, 'value' => $data->subTotal],
+                        'shipping' => ['currency_code' => $data->currency, 'value' => $data->shipping],
+                        'discount' => ['currency_code' => $data->currency, 'value' => $data->discount],
+                    ]
                 ]
+            ],
+            [
+                'op' => 'replace',
+                'path' => "/purchase_units/@reference_id=='default'/items",
+                'value' => $items
             ],
             [
                 'op' => 'add',
