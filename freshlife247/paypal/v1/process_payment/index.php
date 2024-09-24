@@ -36,14 +36,14 @@ class PatchOrder
                     'currency_code' => $data->currency,
                     'value' => $data->total,
                     'breakdown' => [
-                        'item_total' => ['currency_code' => $data->currency, 'value' => $data->subTotal],
+                        'item_total' => ['currency_code' => $data->currency, 'value' => $data->sub_total],
                         'shipping' => ['currency_code' => $data->currency, 'value' => $data->shipping],
                         'discount' => ['currency_code' => $data->currency, 'value' => $data->discount],
                     ]
                 ]
             ],
             [
-                'op' => 'replace',
+                'op' => 'add',
                 'path' => "/purchase_units/@reference_id=='default'/items",
                 'value' => $items
             ],
