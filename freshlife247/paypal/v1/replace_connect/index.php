@@ -29,7 +29,7 @@ try {
     }
 
     switch ($_SERVER['REQUEST_METHOD']) {
-        case 'POST': connectClientId($data); break;
+        case 'POST': ReplaceKey($data); break;
         
         default: show404(); die; break;
     }
@@ -41,26 +41,37 @@ try {
     die;
 }
 
-function connectClientId($data) {
+function ReplaceKey($data) {
     if (empty($data)) {
         show404();
     }
-    deleteAllRow();
-    $input = [
-        "setting_key" => array_keys((array)$data),
-        "setting_value" => array_values((array)$data)
-    ];
-    $insert = insertRow($input);
-    $webhook = replaceWebhook($data->client_id, $data->secret_key);
+
+    $client = new PayPalHttpClient($environment);
+    $insert = false;
+    $webhook = false;
+    if (!CheckExistWebhook($client)) {
+        deleteAllRow();
+        $input = [
+            "setting_key" => array_keys((array)$data),
+            "setting_value" => array_values((array)$data)
+        ];
+        $insert = insertRow($input);
+        $webhook = setWebhook($data->client_id, $data->secret_key);
+    }
+
     if ($insert && $webhook) {
         $GLOBALS['conn']->commit();
         $hashInput = array_merge(array_values((array)$data), [PRIVATE_KEY]);
         echo responseSuccess("Success", hash256($hashInput));
-    }else if (!$webhook){
-        echo responseError("Can't setup webhook!");
+    }
+
+    if (!$insert && $webhook) {
+        echo responseError("Can't insert data to table!");
         $GLOBALS['conn']->rollback();
-    }else{
-        echo responseError("Error insert database");
+    }
+
+    if ($insert && !$webhook) {
+        echo responseError("Can't setup webhook!");
         $GLOBALS['conn']->rollback();
     }
 }
@@ -130,57 +141,7 @@ function show404() {
     die;
 }
 
-function replaceWebhook($clientId, $secretKey) {
-    $protocol = 'https://';
-    $baseUrl = $protocol . $_SERVER['HTTP_HOST'] . WEBHOOK_URI;
-    
-    if (IS_PRODUCTION) {
-        $environment = new ProductionEnvironment($clientId, $secretKey);
-    } else {
-        $environment = new SandboxEnvironment($clientId, $secretKey);
-    }
-    $client = new PayPalHttpClient($environment);
-
-    deleteWebhook($client);
-
-    // Step 4: Create a new webhook
-    $request = new WebhookCreateRequest();
-    $request->body = [
-        'url' => $baseUrl,
-        'event_types' => [
-            [
-                'name' => "CHECKOUT.ORDER.APPROVED"
-            ],
-            [
-                'name' => "PAYMENT.CAPTURE.COMPLETED"
-            ],
-            [
-                'name' => "PAYMENT.CAPTURE.REFUNDED"
-            ],
-            [
-                'name' => "CUSTOMER.DISPUTE.CREATED"
-            ],
-            [
-                'name' => "CUSTOMER.DISPUTE.RESOLVED"
-            ]
-        ]
-    ];
-
-    try {
-        $response = $client->execute($request);
-        if ($response->statusCode == 201) {
-            Telegram::sendMessage("Webhook successfully replaced: " . json_encode($request->body), "Replace Webhook");
-            return true;
-        }
-    } catch (Exception $e) {
-        Telegram::sendMessage("Error creating new webhook: " . $e->getMessage(), "Replace Webhook Error");
-    }
-
-    return false;
-}
-
-
-function deleteWebhook($client) {
+function CheckExistWebhook($client) {
     try {
         // Step 1: List existing webhooks
         $listRequest = new WebhookListRequest();
@@ -188,20 +149,52 @@ function deleteWebhook($client) {
         $webhooks = $response->result->webhooks;
 
         // Step 2: Check if the webhook with the same URL already exists
-        $existingWebhookId = null;
+        $existingWebhook = false;
         foreach ($webhooks as $webhook) {
             if ($webhook->url == $baseUrl) {
-                $existingWebhookId = $webhook->id;
+                $existingWebhook = true;
                 break;
             }
         }
-
-        // Step 3: Delete the existing webhook if it exists
-        if ($existingWebhookId) {
-            $deleteRequest = new WebhookDeleteRequest($existingWebhookId);
-            $client->execute($deleteRequest);
-        }
+        return $existingWebhook;
     } catch (Exception $e) {
         Telegram::sendMessage("Error listing or deleting existing webhook: " . $e->getMessage(), "Replace Webhook Error");
     }
+}
+
+
+function setWebhook($clientId, $secretKey) {
+        $protocol = 'https://';
+        if (IS_PRODUCTION) {
+            $environment = new ProductionEnvironment($clientId, $secretKey);
+        }else{
+            $environment = new SandboxEnvironment($clientId, $secretKey);
+        }
+        $client = new PayPalHttpClient($environment);
+        $request = new WebhookConnectRequest();
+        $request->body =  [
+            'url' => $protocol . $_SERVER['HTTP_HOST'] . WEBHOOK_URI,
+            'event_types' => [
+                [
+                    'name' => "CHECKOUT.ORDER.APPROVED"
+                ],
+                [
+                    'name' => "PAYMENT.CAPTURE.COMPLETED"
+                ],
+                [
+                    'name' => "PAYMENT.CAPTURE.REFUNDED"
+                ],
+                [
+                    'name' => "CUSTOMER.DISPUTE.CREATED"
+                ],
+                [
+                    'name' => "CUSTOMER.DISPUTE.RESOLVED"
+                ]
+            ]
+        ];
+
+        Telegram::sendMessage(json_encode($request->body), "Replace Webhook");
+
+        $response = $client->execute($request);
+        return $response->statusCode == 201 ? true : false;
 }
