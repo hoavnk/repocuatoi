@@ -1,4 +1,5 @@
 <?php
+global $conn;
 require 'telegram.php';
 require 'database.php';
 
@@ -22,7 +23,7 @@ define(
 );
 
 define(
-    "CURLOPT_URL",
+    "CURL_LIST_WEBHOOK",
      IS_PRODUCTION ? "https://api.paypal.com/v1/notifications/webhooks"
       : "https://api.sandbox.paypal.com/v1/notifications/webhooks"
 );

@@ -206,7 +206,7 @@ function listWebhooks($clientId, $secretKey) {
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => CURLOPT_URL,
+        CURLOPT_URL => CURL_LIST_WEBHOOK,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
