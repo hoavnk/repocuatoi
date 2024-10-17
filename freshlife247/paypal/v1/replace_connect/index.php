@@ -45,21 +45,22 @@ function ReplaceKey($data) {
     if (empty($data)) {
         show404();
     }
+    $input = [
+        "setting_key" => array_keys((array)$data),
+        "setting_value" => array_values((array)$data)
+    ];
+    $clientId = $data->client_id;
+    $secretKey = $data->secret_key;
 
-    $client = new PayPalHttpClient($environment);
     $insert = false;
     $webhook = false;
-    if (!CheckExistWebhook($client)) {
+    if (!CheckExistWebhook($clientId, $secretKey)) {
         deleteAllRow();
-        $input = [
-            "setting_key" => array_keys((array)$data),
-            "setting_value" => array_values((array)$data)
-        ];
         $insert = insertRow($input);
-        $webhook = setWebhook($data->client_id, $data->secret_key);
+        $webhook = setWebhook($clientId, $secretKey);
     }
 
-    if ($insert && $webhook) {
+    if ($insert && $webhook || !$insert && !$webhook) {
         $GLOBALS['conn']->commit();
         $hashInput = array_merge(array_values((array)$data), [PRIVATE_KEY]);
         echo responseSuccess("Success", hash256($hashInput));
@@ -141,19 +142,20 @@ function show404() {
     die;
 }
 
-function CheckExistWebhook($client) {
+function CheckExistWebhook($clientId, $secretKey) {
     try {
-        // Step 1: List existing webhooks
-        $listRequest = new WebhookListRequest();
-        $response = $client->execute($listRequest);
-        $webhooks = $response->result->webhooks;
+        $host = $_SERVER['HTTP_HOST'];
+        // Step 1: List existing webhooks using the new listWebhooks function
+        $response = listWebhooks($clientId, $secretKey);
 
         // Step 2: Check if the webhook with the same URL already exists
         $existingWebhook = false;
-        foreach ($webhooks as $webhook) {
-            if ($webhook->url == $baseUrl) {
-                $existingWebhook = true;
-                break;
+        if (isset($response->webhooks)) {
+            foreach ($response->webhooks as $webhook) {
+                if (strpos($webhook->url, $host)) {
+                    $existingWebhook = true;
+                    break;
+                }
             }
         }
         return $existingWebhook;
@@ -197,4 +199,28 @@ function setWebhook($clientId, $secretKey) {
 
         $response = $client->execute($request);
         return $response->statusCode == 201 ? true : false;
+}
+
+
+function listWebhooks($clientId, $secretKey) {
+    $curl = curl_init();
+
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => CURLOPT_URL,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_HTTPHEADER => array(
+            "Content-Type: application/json",
+            "Authorization: Basic " . base64_encode("$clientId:$secretKey"),
+        ),
+    ));
+
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+    curl_close($curl);
+
+    if ($err) {
+        throw new Exception("cURL Error: $err");
+    } else {
+        return json_decode($response);
+    }
 }

@@ -21,6 +21,12 @@ define(
       : "https://api-m.sandbox.paypal.com/v1/shipping/trackers-batch"
 );
 
+define(
+    "CURLOPT_URL",
+     IS_PRODUCTION ? "https://api.paypal.com/v1/notifications/webhooks"
+      : "https://api.sandbox.paypal.com/v1/notifications/webhooks"
+);
+
 $clientId = null;
 $secretKey = null;
 $query = $conn->query("SELECT * FROM " . PROXY_DATABASE_NAME  . " WHERE setting_key='client_id' OR setting_key='secret_key'");
