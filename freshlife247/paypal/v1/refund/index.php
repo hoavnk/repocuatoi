@@ -43,30 +43,57 @@ function refundOrder($data) {
     $clientId = $keyData[0]['setting_value'];
     $secretKey = $keyData[1]['setting_value'];
 
+    $protocol = 'https://';
+    $apiUrl = IS_PRODUCTION ? 'https://api.paypal.com/v1/payments/sale/' : 'https://api.sandbox.paypal.com/v1/payments/sale/';
+    $apiUrl .= $data->capture_id . '/refund';
+
+
     $resAuthentication = authenticationPaypal($clientId, $secretKey);
     if (!isset($resAuthentication['access_token'])) {
         echo responseError('Error', 'Authentication fail!');
         return responseError('Error', 'Authentication fail!');
     }
 
-    $protocol = 'https://';
-    if (IS_PRODUCTION) {
-        $environment = new ProductionEnvironment($clientId, $secretKey);
-    }else{
-        $environment = new SandboxEnvironment($clientId, $secretKey);
-    }
-    $client = new PayPalHttpClient($environment);
-    $request = new CapturesRefundRequest($data->capture_Id);
-    $request->body =  [
+    $accessToken = $resAuthentication['access_token'];
+
+    $ch = curl_init($apiUrl);
+
+    // Set the Authorization header with the Bearer token
+    $headers = [
+        'Content-Type: application/json',
+        'Authorization: Bearer ' . $accessToken
+    ];
+
+    // Set the request body
+    $body = json_encode([
         'amount' => [
             'total' => $data->amount,
             'currency' => $data->currency
         ]
-    ];
-    $response = $client->execute($request);
+    ]);
 
-    Telegram::sendMessage(json_encode($response), "Refund");
-    return $response->statusCode == 201 ? true : false;    
+    // Set cURL options
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $body);
+
+    // Execute the request
+    $response = curl_exec($ch);
+    if (curl_errno($ch)) {
+        echo 'cURL error: ' . curl_error($ch);
+    }
+
+    curl_close($ch);
+
+    // Log the response for debugging purposes
+    Telegram::sendMessage($response, "Refund");
+
+    // Set the response header to JSON
+    header('Content-Type: application/json');
+
+    // Return the response from PayPal as JSON
+    echo $response;
 }
 
 
